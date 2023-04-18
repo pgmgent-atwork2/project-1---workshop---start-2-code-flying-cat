@@ -1,4 +1,4 @@
-#Flying Tiger 2023  
+# Flying Tiger 2023  
 for @work2  
 Our game is inspired by Flappy Bird, but it's a little bit different, and more beautiful as well  
 It's about a cute flying tiger that has a beautiful rainbow in his ....., the more holes you get through the more points you earn.  
