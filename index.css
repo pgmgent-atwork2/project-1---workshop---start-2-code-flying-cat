@@ -33,14 +33,10 @@
   left: 25rem;
   top: -31rem;
   animation: obstacle 2s infinite linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-}
-
-.tunnel p {
-  font-family: sans-serif;
-  color: white;
-  transform: rotate(-90deg);
-  margin: 0 auto;
 }
 
 .tiger {
