@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" onclick="jump()">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
-    <title>Flying Cat</title>
+    <title>Flying Tiger</title>
 </head>
 <body>
-    <div class="game">
-        <div class="obstacle"></div>
+    <div class="menu">
+        <h1 class="title">Flying Tiger</h1>
+        <span>Developed by: <br> Karim Matar, Yana Keppens</span>
+        <button class="btn" onclick="startGame()">Start Game</button>
+    </div>
+    <div class="game" style="display:none">
+        <img src="images/wall.jpg" class="obstacle">
         <div class="tunnel"></div>
         <img src="images/Tiger.png" alt="" class="tiger">
-        {# <div class="start"></div>
-        <div class="gameover"></div> #}
     </div>
     <script src="./script.js"></script>
 </body>
