@@ -7,7 +7,7 @@
   width: 400px;
   height: 500px;
   border: 1px solid black;
-  margin: auto;
+  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -35,3 +35,10 @@
   animation: obstacle 2s infinite linear;
 }
 
+.tiger {
+  width: 140px;
+  height: 80px;
+  position: absolute;
+  object-fit: cover;
+  top: 100px;
+} 
