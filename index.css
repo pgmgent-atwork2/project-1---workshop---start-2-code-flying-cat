@@ -6,9 +6,8 @@
 .game {
   width: 25rem;
   height: 31rem;
-  background-img: url(/images/background.jpg);
-  border: 1px solid black;
-  margin-top: 5rem;
+  background: url('images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -29,7 +28,7 @@
 .tunnel {
   width: 3rem;
   height: 9rem;
-  background-color: white;
+ background-color: #BE6D6C;
   position: relative;
   left: 25rem;
   top: -31rem;
