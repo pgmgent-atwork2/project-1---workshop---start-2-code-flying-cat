@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Tutorial Flying Tiger</title>
+</head>
+
+<body>
+<header>
+    <h1>Tutorial Flying Tiger</h1>
+    <a href="./index.html">Game</a>
+</header>
+
+    <div class="layout-container">
+        <h2>Op deze website vind je de tutorial voor onze game "Flying Tiger"</h2>
+        <p>Als eerste maak je een map aan met 3 files: een HTML file, CSS en Javascript.</p>
+
+        <h3>Html:</h3>
+        <p>Je start met het creeëren van een HTML bestand, druk op de ! toets en edit de title, link je CSS bestand en
+            JS
+        </p>
+        <p>Maak een div genaamt "Menu" zodat we het spel een menu kunnen geven. Je zet hier in wat je wilt. Maak ook een
+            button aan zodat je later het spel kan doen starten.</p>
+        <p>Hierna maak je een div genaamt: game, aan waarin 2 images met classes in komen en 1 div genaamt Tunnel.</p>
+        <div class="fiddle-container">
+            <script async src="//jsfiddle.net/yakepp/vs0ekfy8/8/embed/html/dark/"></script>
+        </div>
+
+        <h3>CSS:</h3>
+        <p>In CSS gaan we alles vorm geven.</p>
+        <p>We geven eerst de body een padding van 0 en margin van 0.</p>
+        <p> Het interface van het spel geven we een width en height en een border zodat die zichtbaar word.</p>
+        <p> Met margin op 0 en auto zorgen we ervoor dat het spel in het midden van de pagina komt te staan. De overflow
+            hidden zorgt ervoor dat later het obstakel vlot doorlopt en van de interface verdwijnd. </p>
+        <p>Als je een leuke
+            achtergrond wil hebben kan je simpel met een background url verwijzen naar een image in je bestand, zorg
+            ervoor
+            dat de background-size staat op cover zodat die in de interface past.</p>
+        <div class="fiddle-container">
+            <script async src="//jsfiddle.net/yakepp/vs0ekfy8/9/embed/css/dark/"></script>
+        </div>
+
+        <p>Het spel moet ook verschillende obstakels hebben waar je karakter (in dit geval de tijger) tussen moet
+            vliegen.</p>
+        <p>We geven de obstakels weer een width en height. Omdat je obstakel een foto is maken we dat deze past tussen
+            de
+            afmetingen met object-fit: cover.</p>
+        <p>Je geeft de positie relative zodat jouw tijger er voor kan komen.</p>
+        <p>Omdat je obstakels moeten bewegen geven we deze een animatie, je spreekt het aan, geeft het een tijd en geeft
+            aan
+            hoe het moet herhalen.</p>
+        <p>Met de keyframes heb je controle over de animatie. Je spreekt aan wat je gaat animeren en past deze aan.</p>
+        <div class="fiddle-container">
+            <script async src="//jsfiddle.net/yakepp/vs0ekfy8/16/embed/css/dark/"></script>
+        </div>
+
+        <p>Bij de tunnel gaan we deze terug een width en height geven, deze komt tussen 2 obstakels te staan. Die heeft
+            dus
+            dezelfde breedte van de obstakels en dezelfde animatie en position.</p>
+        <div class="fiddle-container">
+            <script async src="//jsfiddle.net/yakepp/vs0ekfy8/17/embed/css/dark/"></script>
+        </div>
+
+        <p>De tijger gaan we ook een grote en je zorgt ervoor dat hij tussen de 2 obstakels kan.</p>
+        <p>We geven hem een position absolute dat samen gaat met de posities van de obstakels en tunnel. Omdat het een
+            foto
+            is maken we dat hij past tussen de afmetingen met object-fit, geef hem ook een top.</p>
+        <div class="fiddle-container">
+            <script async src="//jsfiddle.net/yakepp/vs0ekfy8/13/embed/css/dark/"></script>
+        </div>
+
+        <p>Het menu geven we een position fixed en left/right 50% zodat hij in het midden komt te staan. Met transform
+            maak
+            het ook dat hij in het midden gesitueerd is.</p>
+        <p>We geven het een display flex zodat we alle items binnen de klasse een orde kunnen geven. Flex-direction
+            zorgt
+            ervoor dat de items boven elkaar komen te staan. Justify content centreerd alles en align-items zet alles in
+            het
+            midden.</p>
+        <p>Je kan het menu een background image geven op dezelfde manier als die van de game interface.</p>
+        <p>Geef je menu een breedte en hoogte en een kleur voor de tekst.</p>
+        <p>De button geef je ook weeral een breedte en een padding zodat de tekst niet tegen de rand komt te staan.</p>
+        <div class="fiddle-container">
+            <script async src="//jsfiddle.net/yakepp/vs0ekfy8/14/embed/css/dark/"></script>
+        </div>
+
+        <h3>Javascript:</h3>
+        <p>document.querrySelector dient voor een element uit de HTML file op te halen om te kunnen bewerken en ons
+            functies erin toevoegen.</p>
+        <p>Juming en counter zetten we op 0 zodat de teller en springen van 0 beginnen.</p>
+        <p>AddEvent listener is de taak command voor de obstakelen, math.random is een sort bevel aan de obstakelen dat
+            ze zich in willekeurige plaatsen moeten renderen.</p>
+        <div class="fiddle-container">
+            <script async src="//jsfiddle.net/karim_ma7/Lvf2oda5/2/embed/js/dark/"></script>
+        </div>
+
+        <p>SetInterval functie is eigenlijk een ding die een bepaalde taak doet in een vaste tijd die u bepaalt, in ons
+            geval 10ms</p>
+        <p>Deze code zorgt voor het spelgedrag van een personage dat omhoog springt terwijl het obstakels ontwijkt. Het
+            spel eindigt als het personage de obstakels raakt of de onderkant van het speelveld bereikt. De score wordt
+            bijgehouden en getoond wanneer het spel is afgelopen.</p>
+        <div class="fiddle-container">
+            <script async src="//jsfiddle.net/karim_ma7/Lvf2oda5/3/embed/js/dark/"></script>
+        </div>
+
+        <p>Deze code zorgt ervoor dat het personage kan springen. Als de functie wordt aangeroepen, verandert een
+            variabele genaamd "jumping" in 1 en wordt er een interval gestart dat de positie van het personage elke 10
+            milliseconden bijwerkt. Tijdens het springen wordt de positie van het personage omhoog bijgewerkt totdat de
+            "jumpCount" de waarde van 15 bereikt. Vervolgens stopt het interval en wordt de "jumping" variabele
+            teruggezet naar 0.</p>
+        <div class="fiddle-container">
+            <script async src="//jsfiddle.net/karim_ma7/Lvf2oda5/4/embed/js/dark/"></script>
+        </div>
+
+        <p>Deze code zorgt voor dat de karakter springt telken als je op spatie toets drukt.</p>
+        <div class="fiddle-container">
+            <script async src="//jsfiddle.net/karim_ma7/Lvf2oda5/8/embed/js/dark/"></script>
+        </div>
+
+        <p>Deze code zorgt dat de eerste menu verdwijnt en de game verschijnt als je op start game drukt.</p>
+        <div class="fiddle-container">
+            <script async src="//jsfiddle.net/karim_ma7/Lvf2oda5/6/embed/js/dark/"></script>
+        </div>
+</body>
+
+</html>
