@@ -32,7 +32,7 @@ function startGame() {
       const jumpInterval = setInterval(() => {
           const characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
           if((characterTop>6) && (jumpCount<15)) {
-              character.style.top = (characterTop-2)+"px";
+              character.style.top = (characterTop-3)+"px";
           }
           if(jumpCount>20) {
               clearInterval(jumpInterval);
