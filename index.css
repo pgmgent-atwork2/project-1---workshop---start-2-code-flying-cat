@@ -36,17 +36,14 @@
   left: 25rem;
   top: -31rem;
   animation: obstacle 2s infinite linear;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .tiger {
-  width: 140px;
-  height: 100px;
+  width: 9rem;
+  height: 6rem;
   position: absolute;
   object-fit: cover;
-  top: 100px;
+  top: 6rem;
 } 
 
 .menu{
